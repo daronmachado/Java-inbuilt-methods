@@ -1,0 +1,6 @@
+Integer.parseInt(strNum) //Converts string number to int
+
+Integer.toString(num) //Converts int to String
+
+Integer.MAX_VALUE //Stores max int value ((2^31)-1)
+Integer.MIN_VALUE //Store min int value (-2^31)
