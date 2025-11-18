@@ -1,0 +1,14 @@
+Math.abs(x)              //Returns the absolute value
+
+Math.max(x, y)           //Returns the greatest of 2 values
+Math.min(x, y)           //Returns the smallest of 2 values
+
+Math.pow(base, exponent) //Returns base raised to exponent
+Math.sqrt(x)             //Returns the sqrt
+
+Math.ceil(x)             //Rounds up to the smallest integer greater than or equal to x.
+Math.floor(x)            //Rounds down to the largest integer less than or equal to x.
+Math.round(x)            //Rounds to the nearest integer.
+
+Math.log(x)              //Returns the natural logarithm (base e).
+Math.log10(x)            //Returns the base 10 logarithm.
