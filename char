@@ -1,0 +1,23 @@
+Character.isDigit(c)	        // checks if c is 0–9
+Character.isLetter(c)	        // checks if c is A–Z or a–z
+Character.isLetterOrDigit(c)	// alphanumeric check
+Character.isLowerCase(c)	    // checks lowercase
+Character.isUpperCase(c)	    // checks uppercase
+Character.isWhitespace(c)	    // space, tab, newline
+
+Character.toLowerCase(c)	    // convert to lowercase (Not inplace, but returns)
+Character.toUpperCase(c)	    // convert to uppercase (Not inplace, but returns)
+
+**String Methods That Deal with Characters**
+s.charAt(i)	                  // get char at index
+s.toCharArray()	              // convert string → char[]
+
+s.indexOf(c)	                //first occurrence
+s.lastIndexOf(c)	            //last occurrence
+s.contains(...)	              //string contains char/substring
+
+-char array → String
+String s = new String(arr);
+
+-Convert char digit to integer
+int x = c - '0';
