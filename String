@@ -1,0 +1,15 @@
+s.length()	        //Get string length
+s.charAt(int index)	//Access a character
+s.toCharArray()	    //Convert string to char array (faster manipulation)
+
+s.substring(int begin)	        //Substring from index to end
+s.substring(int begin, int end)	//Substring from begin to end-1
+
+**Searching inside a string**
+s.indexOf(char)	              //Find first occurrence
+s.indexOf(String)	            //Find substring
+s.indexOf(char, fromIndex)	  //Find after a given index
+s.lastIndexOf(char or String)	//Find last occurrence
+s.contains(CharSequence)	    //Check if substring exists
+s.startsWith(String)	        //Prefix check
+s.endsWith(String)	          //Suffix check
