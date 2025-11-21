@@ -13,3 +13,18 @@ s.lastIndexOf(char or String)	//Find last occurrence
 s.contains(CharSequence)	    //Check if substring exists
 s.startsWith(String)	        //Prefix check
 s.endsWith(String)	          //Suffix check
+
+**Comparing Strings**
+s.equals(Object)	          //Compare strings
+s.equalsIgnoreCase(String)	//Case-insensitive match
+
+**Modification / case conversion**
+(remember: Strings are immutable → new string is returned)
+toLowerCase()	                //Lowercase entire string
+toUpperCase()	                //Uppercase entire string
+trim()	                      //Remove leading/trailing spaces
+replace(char old, char new)	  //Replace characters
+replace(CharSequence old, CharSequence new)	//Replace substring
+replaceAll(regex, replacement)	            //Replace using regex
+
+split(String regex)	//Split based on regex
