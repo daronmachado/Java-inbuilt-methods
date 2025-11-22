@@ -1,0 +1,15 @@
+StringBuilder sb = new StringBuilder();
+StringBuilder sb = new StringBuilder("hello");
+StringBuilder sb2 = new StringBuilder(sb1.toString());
+int len = sb.length();
+
+sb.append()                   //Adds to the end (O(1) amortized).
+char c = sb.charAt(3)         //Access any character (O(1)).
+setCharAt(int index, char ch) //Modify in-place
+sb.insert(int index, …)
+sb.delete(2, 5)               // deletes chars from index 2 to 4
+sb.deleteCharAt(4)
+sb.reverse();
+
+String s = sb.substring(2, 6) //returns a String, not StringBuilder
+String result = sb.toString() 
