@@ -1,0 +1,9 @@
+int[] arr  <|>  arr.length
+
+Arrays.sort(arr);                               // ascending
+Arrays.sort(arr, Collections.reverseOrder());   // for Integer[]
+
+int[] newArr = Arrays.copyOf(arr, arr.length);  
+Arrays.fill(arr, 5);
+boolean isEqual = Arrays.equals(arr1, arr2);
+int[] part = Arrays.copyOfRange(arr, 2, 5);     // 2 to 4
