@@ -1,0 +1,22 @@
+list.add(element);
+list.add(index, element); //Used when inserting into middle or implementing custom structures.
+list.get(index);          //Get element
+list.set(index, element); //Set/Replace element
+list.size();
+
+*Removing from ArrayList is O(n)
+list.remove(index);
+list.remove(Object o);
+list.clear();
+
+list.contains(element);
+list.indexOf(element);      //First occurence
+list.lastIndexOf(element);  //Last occcurence
+
+Collections.sort(list);      
+list.sort((a, b) -> a - b);  //custom comparator
+
+ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1,2,3)); //Convert array->ArrayList
+Collections.fill(list, value);
+
+list.addAll(otherList); //Add all elements from another list
