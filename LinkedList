@@ -1,0 +1,17 @@
+size(), isEmpty(), clear()
+
+add(E element)
+addFirst(E element)
+add(int index, E element) //Add at specific index
+
+get(int index)
+getFirst()
+getLast()
+
+peek()
+
+remove() or poll() //Removes first element added to the LinkedList
+remove(int index)
+remove(Object o)
+
+contains(Object o)
