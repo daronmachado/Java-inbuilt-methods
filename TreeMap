@@ -1,0 +1,17 @@
+put(K key, V value)          //Insert or update a key-value pair.
+get(Object key)
+remove(Object key)
+containsKey(Object key)
+containsValue(Object value)
+
+**Navigational Methods
+firstKey()
+lastKey()
+firstEntry()                 //Returns key-value pair with smallest key.
+
+for (Integer key : tm.keySet()) { ... }
+for (String val : tm.values()) { ... }
+for (Map.Entry<Integer, String> entry : tm.entrySet()) {
+    int key = entry.getKey();
+    String value = entry.getValue();
+}
