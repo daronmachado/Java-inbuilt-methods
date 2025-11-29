@@ -1,0 +1,10 @@
+| Method                  | Usage
+| ----------------------- | ----------------------------- |
+| put()                   | Insert/update frequency/state |
+| get()                   | Lookups, LRU access           |
+| remove()                | Evictions, cleanup            |
+| containsKey()           | Fast presence check           |
+| size()                  | Constraints, capacity check   |
+| keySet()                | Ordered keys                  |
+| entrySet()              | Traverse in order             |
+| getOrDefault()          | Quick frequency counting      |
