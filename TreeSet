@@ -1,0 +1,14 @@
+first()  //Get smallest element
+last()   //Get largest element
+
+<>
+  TreeSet<Integer> set = new TreeSet<>();
+  set.add(10); set.add(3);
+
+  Iterator<Integer> it = set.iterator();  //Traverse in ascending order.
+
+  while (it.hasNext()) System.out.print(it.next() + " ");
+  
+<>
+
+Similarly, descendingIterator()           //Traverse in descending order.
