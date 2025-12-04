@@ -1,0 +1,13 @@
+PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
+
+add()
+offer()
+peek()
+poll()
+remove()
+size()
+isEmpty()
+clear()
