@@ -1,0 +1,8 @@
+add(E e)
+clear()
+contains(Object)
+equals(Object)
+isEmpty()
+iterator()
+remove(Object)
+toArray()
