@@ -1,0 +1,31 @@
+Adjacency List - Using ArrayList
+**************************************************************
+ArrayList<ArrayList<Integer>> adjList = new ArrayList<>();
+for(int i=0; i<noOfNodes; i++) adjList.add(new ArrayList<>());
+
+for(int[] entry : grid){
+    int u=entry[0], v=entry[1];
+    adjList.get(u).add(v);
+}
+***************************************************************
+Using HashMap
+************************************************
+----FOR UNDIRECTED GRPAH----
+Map<String, List<String>> adj = new HashMap<>();
+
+void addUndirectedEdge(String u, String v) {
+    adj.putIfAbsent(u, new ArrayList<>());
+    adj.putIfAbsent(v, new ArrayList<>());
+
+    adj.get(u).add(v);
+    adj.get(v).add(u);
+}
+
+----FOR WEIGHTED GRAPH----
+Map<String, List<Pair>> adj = new HashMap<>();
+
+void addEdge(String u, String v, int w) {
+    adj.putIfAbsent(u, new ArrayList<>());
+    adj.get(u).add(new Pair(v, w));
+}
+************************************************
