@@ -1,0 +1,10 @@
+class Pair{
+    int distance;
+    int node;
+    Pair(int distance, int node){
+      this.distance = distance;
+      this.node = node;
+    }
+}
+
+PriorityQueue<Pair> q = new PriorityQueue<>((a,b) -> a.time - b.time);
