@@ -1,0 +1,8 @@
+Java Bitwise Operators
+-> AND - a & b
+-> OR - a|b
+-> XOR - a^b
+-> NOT - ~a
+
+-> Left Shift  - a<<n //used for multiply by 2ⁿ
+-> Right Shift - a>>n //used division by powers of 2
