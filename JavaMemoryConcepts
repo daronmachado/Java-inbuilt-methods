@@ -1,0 +1,42 @@
+*For DSA, the Stack and Heap are the MOST important.
+JVM Memory Model -> Stack (per thread), Heap (shared)
+
+1) STACK MEMORY (Fast, Small, Auto-managed)
+| Stored in Stack       | Why                      |
+| --------------------- | ------------------------ |
+| Primitive variables   | int, char, boolean, etc. |
+| References to objects | pointer only, not object |
+| Function call frames  | parameters + local vars  |
+| Recursion call frames | each call pushes a frame |
+Properties -> Very fast access | Automatically freed when method returns | Limited size → deep recursion can cause StackOverflowError.
+Example:
+int a = 10;        // a is on stack
+int[] arr = new int[5]; // arr (reference) on stack; array object on heap
+
+2) HEAP MEMORY (Large, Slower, GC-managed)
+| Stored in Heap  | Examples                          |
+| --------------- | --------------------------------- |
+| Objects         | new Node(), new String()          |
+| Arrays          | new int[100000]                   |
+| Collections     | ArrayList, HashMap, PriorityQueue |
+Properties -> Shared across threads | Slower than stack | Objects persist until Garbage Collector removes them | Large arrays/graphs/trees consume heap memory → can cause OutOfMemoryError.
+Example:
+Node node = new Node(5); // node object on heap, reference on stack
+
+3) GARBAGE COLLECTION (GC)
+Java automatically deletes heap objects that are no longer referenced.
+
+✔ Important for DSA:
+- Modifying an object inside a function changes the original.
+- Reassigning a reference inside a function does NOT change the original reference.
+static void fun(int[] arr) {
+    arr[0] = 100;           // modifies original
+    arr = new int[5];       // local reference only
+    arr[0] = 999;           // modifies ONLY new array inside function
+}
+
+4) STRING MEMORY (Important!)
+- Strings are immutable → stored in heap (Intern pool optimization).
+- Repeated concatenation creates new objects → slow.
+Use StringBuilder in DSA.
+
