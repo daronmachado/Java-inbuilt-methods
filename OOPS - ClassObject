@@ -1,0 +1,37 @@
+CLASS & OBJECT - The Foundantion
+1) A class is a user-defined data type that groups:
+  - State → variables (data)
+  - Behavior → methods (operations on data)
+
+Example:
+class Car {
+    int speed;          // state
+    void drive() {      // behavior
+        System.out.println("Driving");
+    }
+}
+
+2) An object is a real runtime entity created from a class, representing instance of a class.
+Example:
+Car c = new Car();
+
+This single line does three things:
+1	Memory is allocated in heap
+2	Instance variables are initialized
+3	Constructor is called
+
+Stack -> Reference variable c
+Heap -> Actual Car object, Instance variable speed, Methods (shared across objects)
+
+3)Constructor
+Example:
+class Car {
+    int speed;
+    Car() {
+        speed = 0;
+    }
+}
+Constructor:
+Runs only once per object, Initializes instance variables, Has same name as class, Has no return type.
+
+4)new keyword -> Allocates memory in heap, Calls constructor, Returns reference to object
