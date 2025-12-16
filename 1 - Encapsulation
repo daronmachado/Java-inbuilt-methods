@@ -1,0 +1,45 @@
+Encapsulation is the OOP principle of:
+Binding data (variables) and the methods that operate on that data into a single unit (class), while restricting direct access to the data and allowing controlled access through methods.
+
+Java achieves encapsulation using two tools together:
+
+Tool 1: Access Modifiers (MOST IMPORTANT) :
+| Modifier    | Visibility             |
+| ----------- | ---------------------- |
+| `private`   | Only inside same class |
+| `default`   | Same package           |
+| `protected` | Package + subclass     |
+| `public`    | Everywhere             |
+Encapsulation = primarily private variables
+
+Tool 2: Getter & Setter Methods
+These methods: Expose data indirectly, Apply rules / validation, Control read/write permissions
+Example:
+class Account {
+    private double balance;   // hidden data
+
+    // READ access
+    public double getBalance() {
+        return balance;
+    }
+
+    // WRITE access with validation
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        }
+    }
+
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+        }
+    }
+}
+
+Usage:
+Account acc = new Account();
+acc.deposit(1000);
+acc.withdraw(300);
+System.out.println(acc.getBalance()); // 700
+
