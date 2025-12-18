@@ -47,4 +47,3 @@ Interface Rules
 - Variables are public static final
 - No constructors
 - Supports multiple inheritance
-
