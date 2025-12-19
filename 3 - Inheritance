@@ -1,0 +1,28 @@
+Inheritance is an OOP concept where one class acquires the properties (variables) and behaviors (methods) of another class.
+
+Inheritance exists to solve three major problems:
+- Code Reusability : Avoid writing the same code again and again.
+- Extensibility : Add new behavior without modifying existing code.
+- Polymorphism Support : Parent reference can point to child objects.
+
+Terminology:
+| Parent class | Superclass / Base class               |
+| Child class  | Subclass / Derived class              |
+| `extends`    | Keyword used to inherit               |
+
+Example:
+class Animal {
+    void sound() {
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        super.sound();  // calls Animal's method
+        System.out.println("Dog barks");
+    }
+}
+Dog d = new Dog();
+d.sound();
+
