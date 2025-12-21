@@ -1,0 +1,53 @@
+Polymorphism is the ability of an object to take many forms, where the same method name behaves differently depending on the object it is acting upon.
+Polymorphism in Java is the ability of a method to behave differently based on the object it is invoked upon, achieved through method overloading (compile-time) and method overriding (runtime).
+
+Java supports two types -> Compile-Time Polymorphism, Runtime Polymorphism
+
+**Compile-Time Polymorphism (Method Overloading)
+- When multiple methods have the same name but different parameter lists, and the call is resolved at compile time. Because the compiler decides which method to call based on arguments.
+- Example : 
+  class Calculator {
+
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    double add(double a, double b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+Calculator c = new Calculator();
+c.add(2, 3);        // add(int, int)
+c.add(2.5, 3.5);    // add(double, double)
+
+Rules of Method Overloading ✔ Same method name, ✔ Different parameter list (type / number / order), ❌ Return type alone is NOT sufficient
+
+**5️⃣ Runtime Polymorphism (Method Overriding)
+- When a child class provides its own implementation of a method already defined in the parent class, and the method call is resolved at runtime.
+class Animal {
+    void sound() {
+        System.out.println("Animal makes sound");
+    }
+}
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+Animal a = new Dog();
+a.sound();   // Dog barks
+
+Dynamic Method Dispatch (Core of Runtime Polymorphism)
+Animal a;
+a = new Dog();
+a.sound();
+
+Reference type → Animal, Object type → Dog, JVM decides method call at runtime
+This mechanism is called Dynamic Method Dispatch.
+
