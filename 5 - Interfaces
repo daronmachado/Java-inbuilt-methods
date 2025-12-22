@@ -1,0 +1,48 @@
+An interface in Java is : A contract that defines what a class must do, without defining how it does it.
+
+Example:
+interface Vehicle {
+    void start();  // public abstract
+}
+class Car implements Vehicle {
+    public void start() {
+        System.out.println("Car starts with key");
+    }
+}
+Vehicle v = new Car();
+v.start();
+
+6️⃣ Rules of Interfaces (VERY IMPORTANT)
+Methods
+- By default: public abstract
+- Cannot be private (except Java 9+ helper methods)
+- Must be implemented by concrete classes
+
+Variables
+- Always public static final
+interface Config {
+    int MAX = 100;  // constant
+}
+
+Constructors - ❌ Interfaces cannot have constructors
+Object Creation - ❌ Cannot create objects of interface
+
+7️⃣ Multiple Inheritance Using Interfaces (Big Advantage)
+Java does not allow multiple inheritance using classes, but interfaces solve this.
+
+interface A {
+    void show();
+}
+
+interface B {
+    void show();
+}
+
+class C implements A, B {
+    public void show() {
+        System.out.println("Resolved");
+    }
+}
+
+- No ambiguity because class provides implementation.
+
