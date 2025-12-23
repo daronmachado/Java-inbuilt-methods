@@ -45,4 +45,3 @@ class C implements A, B {
 }
 
 - No ambiguity because class provides implementation.
-
