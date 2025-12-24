@@ -50,4 +50,3 @@ a.sound();
 
 Reference type → Animal, Object type → Dog, JVM decides method call at runtime
 This mechanism is called Dynamic Method Dispatch.
-
