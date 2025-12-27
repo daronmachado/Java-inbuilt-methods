@@ -1,0 +1,14 @@
+Access modifiers control:
+Visibility of classes, Accessibility of variables, methods, and constructors, they define who can access what, and from where.
+
+Java has 4 access modifiers in order:
+private | default (package-private) | protected | public
+
+__________________________________________________________________________________
+| Modifier  | Same Class | Same Package | Subclass (other package) | Everywhere |
+| --------- | ---------- | ------------ | -----------------------  | ---------- |
+| private   | ✅         | ❌          | ❌                      | ❌          |
+| default   | ✅         | ✅          | ❌                      | ❌          |
+| protected | ✅         | ✅          | ✅                      | ❌          |
+| public    | ✅         | ✅          | ✅                      | ✅          |
+__________________________________________________________________________________
