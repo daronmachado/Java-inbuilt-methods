@@ -1,0 +1,35 @@
+Non-access modifiers do not control visibility. Instead, they control behavior, inheritance, instantiation, and special semantics of a class.
+
+1. final Class -> A final class cannot be inherited (no subclassing).
+Example: 
+final class PaymentProcessor {
+    public void process() {
+        System.out.println("Processing payment");
+    }
+}
+❌ This is invalid:
+class OnlinePayment extends PaymentProcessor { } // Compile-time error
+
+2. abstract Class -> Cannot be instantiated, may contain abstract methods (methods without body), used as a base class.
+Example:
+abstract class Vehicle {
+    abstract void move();
+
+    void fuelType() {
+        System.out.println("Petrol or Diesel");
+    }
+}
+Subclass implementation:
+class Car extends Vehicle {
+    void move() {
+        System.out.println("Car moves on roads");
+    }
+}
+
+*final vs abstract
+These cannot be used together:
+final abstract class Example { } // ❌ Invalid
+
+Why?
+abstract → needs subclassing
+final → forbids subclassing
