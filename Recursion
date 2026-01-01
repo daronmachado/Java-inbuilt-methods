@@ -1,0 +1,118 @@
+Recursion is when a function solves a problem by calling itself on smaller inputs, until it reaches a base case.
+
+Every recursion has three mandatory components:
+1. Base Case      → When to STOP
+2. Recursive Call → How the problem reduces
+3. State Change   → What changes between calls
+
+Patterns:
+1) Linear Recursion - One recursive call per function
+void recurse(int index) {
+    if (index == BASE_CONDITION) {
+        return;
+    }
+
+    // do something
+    recurse(index + 1);
+}
+
+2) Binary Recursion (Take / Not Take) - Two recursive calls
+void recurse(int index, List<Integer> path) {
+    if (index == n) {
+        result.add(new ArrayList<>(path));
+        return;
+    }
+
+    // Take
+    path.add(nums[index]);
+    recurse(index + 1, path);
+    path.remove(path.size() - 1);
+
+    // Not Take
+    recurse(index + 1, path);
+}
+
+3)Loop + Recursion (Backtracking) - Loop creates multiple branches
+void backtrack(int level, List<Integer> path) {
+    if (level == TARGET) {
+        result.add(new ArrayList<>(path));
+        return;
+    }
+
+    for (int i = 0; i < choices; i++) {
+        if (invalid) continue;
+
+        path.add(choice);
+        backtrack(level + 1, path);
+        path.remove(path.size() - 1);
+    }
+}
+
+4) Backtracking with Visited / Constraint Arrays - Optimized state tracking
+void dfs(int pos) {
+    if (pos == n) return;
+
+    for (int i = 0; i < n; i++) {
+        if (visited[i]) continue;
+
+        visited[i] = true;
+        dfs(pos + 1);
+        visited[i] = false;
+    }
+}
+
+5) Path Recording Recursion - Build answers while traversing
+void dfs(Node node, List<Integer> path) {
+    if (node == null) return;
+
+    path.add(node.val);
+
+    if (isLeaf(node)) {
+        result.add(new ArrayList<>(path));
+    }
+
+    dfs(node.left, path);
+    dfs(node.right, path);
+
+    path.remove(path.size() - 1);
+}
+
+6) Divide & Conquer - Split problem, solve parts, combine
+int divide(int left, int right) {
+    if (left >= right) return BASE;
+
+    int mid = (left + right) / 2;
+
+    int leftAns = divide(left, mid);
+    int rightAns = divide(mid + 1, right);
+
+    return combine(leftAns, rightAns);
+}
+
+7) Recursion with Return Value - Build answer bottom-up
+int solve(Node node) {
+    if (node == null) return 0;
+
+    int left = solve(node.left);
+    int right = solve(node.right);
+
+    return Math.max(left, right) + 1;
+}
+
+UNIVERSAL BACKTRACKING TEMPLATE
+void backtrack(State state, List<Path> path) {
+
+    if (isBaseCase(state)) {
+        result.add(new ArrayList<>(path));
+        return;
+    }
+
+    for (Choice choice : choices) {
+
+        if (!isValid(choice)) continue;
+
+        apply(choice);
+        backtrack(nextState, path);
+        undo(choice);
+    }
+}
