@@ -4,4 +4,4 @@ O(n)       – Linear space
 O(n log n) – N log N space
 O(n²)      – Quadratic space
 O(2ⁿ)      – Exponential space
-O(n!)      – Factorial space
+O(n!)      – Factorial Space
