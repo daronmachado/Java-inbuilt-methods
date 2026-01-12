@@ -34,4 +34,4 @@ class Car {
 Constructor:
 Runs only once per object, Initializes instance variables, Has same name as class, Has no return type.
 
-4)new keyword -> Allocates memory in heap, Calls constructor, Returns reference to object
+4)new keyword -> Allocates memory in heap, Calls constructor, returns reference to object
