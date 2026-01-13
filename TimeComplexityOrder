@@ -1,8 +1,8 @@
-O(1)       – Constant time
-O(log n)   – Logarithmic
-O(n)       – Linear
-O(n log n) – Linearithmic
-O(n²)      – Quadratic
-O(n³)      – Cubic
-O(2ⁿ)      – Exponential
-O(n!)      – Factorial (slowest)
+O(1)       –  Constant time
+O(log n)   –  Logarithmic
+O(n)       –  Linear
+O(n log n) –  Linearithmic
+O(n²)      –  Quadratic
+O(n³)      –  Cubic
+O(2ⁿ)      –  Exponential
+O(n!)      –  Factorial (slowest)
