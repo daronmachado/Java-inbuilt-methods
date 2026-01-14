@@ -28,7 +28,7 @@ class Car extends Vehicle {
 
 *final vs abstract
 These cannot be used together:
-final abstract class Example { } // ❌ Invalid
+final abstract class Example { } // ❌ invalid
 
 Why?
 abstract → needs subclassing
