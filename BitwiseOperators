@@ -4,5 +4,5 @@ Java Bitwise Operators
 -> XOR - a^b
 -> NOT - ~a
 
--> Left Shift  - a<<n //used for multiply by 2ⁿ
+-> Left Shift  - a<<n //used for multiplying by 2ⁿ
 -> Right Shift - a>>n //used division by powers of 2
