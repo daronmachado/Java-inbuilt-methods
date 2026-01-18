@@ -24,7 +24,7 @@ interface Config {
     int MAX = 100;  // constant
 }
 
-Constructors - ❌ Interfaces cannot have constructors
+Constructors    - ❌ Interfaces cannot have constructors
 Object Creation - ❌ Cannot create objects of interface
 
 7️⃣ Multiple Inheritance Using Interfaces (Big Advantage)
