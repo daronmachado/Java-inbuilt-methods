@@ -25,7 +25,7 @@ Calculator c = new Calculator();
 c.add(2, 3);        // add(int, int)
 c.add(2.5, 3.5);    // add(double, double)
 
-Rules of Method Overloading ✔ Same method name, ✔ Different parameter list (type / number / order), ❌ Return type alone is NOT sufficient
+Rules of Method Overloading ✔ Same method name, ✔ Different parameter list type / number / order), ❌ Return type alone is NOT sufficient
 
 **5️⃣ Runtime Polymorphism (Method Overriding)
 - When a child class provides its own implementation of a method already defined in the parent class, and the method call is resolved at runtime.
