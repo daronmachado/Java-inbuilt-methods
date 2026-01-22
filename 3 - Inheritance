@@ -6,9 +6,9 @@ Inheritance exists to solve three major problems:
 - Polymorphism Support : Parent reference can point to child objects.
 
 Terminology:
-| Parent class | Superclass / Base class               |
-| Child class  | Subclass / Derived class              |
-| `extends`    | Keyword used to inherit               |
+| Parent class | Superclass / Base class           |
+| Child class  | Subclass / Derived class          |
+| `extends`    | Keyword used to inherit           |
 
 Example:
 class Animal {
