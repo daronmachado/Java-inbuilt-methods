@@ -16,7 +16,7 @@ Tool 2: Getter & Setter Methods
 These methods: Expose data indirectly, Apply rules / validation, Control read/write permissions
 Example:
 class Account {
-    private double balance;   // hidden data
+    private double balance; // hidden data
 
     // READ access
     public double getBalance() {
