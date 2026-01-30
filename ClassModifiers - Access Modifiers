@@ -5,8 +5,8 @@ Java has 4 access modifiers in order:
 private | default (package-private) | protected | public
 
 __________________________________________________________________________________
-| Modifier  | Same Class | Same Package | Subclass (other package) | Everywhere |
-| --------- | ---------- | ------------ | -----------------------  | ---------- |
+| Modifier  | Same Class | Same Package | Subclass (other package) | Everywhere  |
+| --------- | ---------- | ------------ |  ----------------------  | ----------  |
 | private   | ✅         | ❌          | ❌                      | ❌          |
 | default   | ✅         | ✅          | ❌                      | ❌          |
 | protected | ✅         | ✅          | ✅                      | ❌          |
