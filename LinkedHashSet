@@ -1,5 +1,5 @@
-add(E e)
-clear()
+add(E e)          // Adds element
+clear()           // clears all elements
 contains(Object)
 equals(Object)
 isEmpty()
