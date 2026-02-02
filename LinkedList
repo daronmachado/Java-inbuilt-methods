@@ -2,7 +2,7 @@ size(), isEmpty(), clear()
 
 add(E element)
 addFirst(E element)
-add(int index, E element) //Add at specific index
+add(int index, E element) // Add at specific index
 
 get(int index)
 getFirst()
