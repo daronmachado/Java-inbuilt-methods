@@ -1,8 +1,8 @@
-add(E e)             //Add an element
-contains(Object o)   //Check if element exists
-remove(Object o)     //Remove specific element
-clear()              //Remove all elements
-isEmpty()            //Check if empty
+add(E e)              //Add an element
+contains(Object o)    //Check if element exists
+remove(Object o)      //Remove specific element
+clear()               //Remove all elements
+isEmpty()             //Check if empty
 
 new ArrayList<>(set)  //Convert HashSet → ArrayList
 set.toArray();        //Convert HashSet → Array
