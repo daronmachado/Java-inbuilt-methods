@@ -1,6 +1,6 @@
-push(E item)	//Pushes an element onto the top of the stack
-pop()	        //Removes and returns the top element
-peek()	      //Returns (doesn’t remove) the top element
-empty()	      //Checks if stack is empty
-isEmpty()	    //Better alternative to empty()
-clear()       //remove all elements
+push(E item)	// Pushes an element onto the top of the stack
+pop()	        // Removes and returns the top element
+peek()	      // Returns (doesn’t remove) the top element
+empty()	      // Checks if stack is empty
+isEmpty()	    // Better alternative to empty()
+clear()       // remove all elements
