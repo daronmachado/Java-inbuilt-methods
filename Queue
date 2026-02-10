@@ -1,6 +1,6 @@
-add(E e)    //Inserts an element into the queue.
-offer(E e)  //Preferred over add() → returns true/false instead of throwing exception
-poll()      //Removes and returns head of the queue. Returns null if queue is empty.
-peek()      //Retrieves head without removing.
+add(E e)     //Inserts an element into the queue.
+offer(E e)   //Preferred over add() → returns true/false instead of throwing exception
+poll()       //Removes and returns head of the queue. Returns null if queue is empty.
+peek()       //Retrieves head without removing.
 addLast(E e)
 removeFirst()
