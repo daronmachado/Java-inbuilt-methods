@@ -7,7 +7,7 @@ final class PaymentProcessor {
         System.out.println("Processing payment");
     }
 }
-❌ This is invalid:
+This is invalid:
 class OnlinePayment extends PaymentProcessor { } // Compile-time error
 
 2. abstract Class -> Cannot be instantiated, may contain abstract methods (methods without body), used as a base class.
@@ -28,7 +28,7 @@ class Car extends Vehicle {
 
 *final vs abstract
 These cannot be used together:
-final abstract class Example { } // ❌ invalid
+final abstract class Example { } // Invalid
 
 Why?
 abstract → needs subclassing
