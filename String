@@ -1,6 +1,6 @@
-s.length()	        //Get string length
-s.charAt(int index)	//Access a character
-s.toCharArray()	    //Convert string to char array (faster manipulation)
+s.length()	                    //Get string length
+s.charAt(int index)	            //Access a character
+s.toCharArray()	                //Convert string to char array (faster manipulation)
 
 s.substring(int begin)	        //Substring from index to end
 s.substring(int begin, int end)	//Substring from begin to end-1
