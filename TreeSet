@@ -1,5 +1,5 @@
-first()  //Get smallest element
-last()   //Get largest element
+first()   //Get smallest element
+last()    //Get largest element
 
 <>
   TreeSet<Integer> set = new TreeSet<>();
