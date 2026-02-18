@@ -20,4 +20,4 @@ s.contains(...)	              //string contains char/substring
 String s = new String(arr);
 
 -Convert char digit to integer
-int x = c - '0';
+int x = c - '0'
