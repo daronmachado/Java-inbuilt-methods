@@ -1,4 +1,5 @@
-Polymorphism is the ability of an object to take many forms, where the same method name behaves differently depending on the object it is acting upon.
+Polymorphism is the ability of an object to take many forms, where the same method name behaves differently depending on the object it is acting upon
+
 Polymorphism in Java is the ability of a method to behave differently based on the object it is invoked upon, achieved through method overloading (compile-time) and method overriding (runtime).
 
 Java supports two types -> Compile-Time Polymorphism, Runtime Polymorphism
